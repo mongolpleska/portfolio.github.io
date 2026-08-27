@@ -1,0 +1,227 @@
+@media (max-width: 1000px) {
+    .headerNav {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .btnMenu {
+        display: flex;
+    }
+
+    .headerMenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        z-index: 101;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .headerMenu .link {
+        transition: all ease .3s;
+    }
+
+    .headerMenu .link:active {
+        transform: scale(1.2);
+    }
+
+    .headerMenu .link:last-child {
+        background: #fff;
+        color: #000;
+    }
+
+    .close {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .close:hover {
+        cursor: pointer;
+    }
+
+    .close .line {
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        display: block;
+    }
+
+    .close .line:first-child {
+        transform: rotate(45deg);
+    }
+
+    .close .line:last-child {
+        transform: rotate(-45deg);
+    }
+
+    .bg {
+        position: absolute;
+        display: none;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+    }
+
+    .headerContent {
+        color: #fff;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    .headerContentBG {
+        z-index: 1;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .headerContent .content {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .headerContentTitle {
+        color: #fff;
+    }
+
+    .customer .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .customer .block {
+        width: 100%;
+    }
+
+    /* ************** */
+
+    .team .container {
+        grid-template-columns: 45% 50%;
+    }
+
+    .team .block2 {
+        grid-template-columns: 100%;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .ourFirm .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 0px 20px;
+    }
+
+    .ourFirm-title {
+        width: 100%;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .ourFirm-content {
+        width: 100%;
+    }
+
+    /* ******************* */
+
+    .ourProcess .group {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    /* ****************** */
+
+    .project .cards {
+        grid-template-columns: 50%;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    /* ********************** */
+
+    .touch .container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .touch h2 {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .headerContent .content {
+        padding: 40px 10px;
+    }
+
+    .headerContentTitleH2 {
+        font-size: 32px;
+        background-size: cover;
+    }
+
+    /* ************* */
+
+    .project .cards {
+        grid-template-columns: 100%;
+    }
+
+    /* **************** */
+
+    .team .container {
+        grid-template-columns: 100%;
+    }
+
+    .team .block1 {
+        margin-bottom: 30px;
+    }
+
+    .team .block1,
+    .team .block2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ******************* */
+
+    .touch h2 {
+        font-size: 24px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .headerContent {
+        color: #fff;
+        background-position: center;
+    }
+}
